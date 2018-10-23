@@ -8,20 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		956502CF217F5FCF0058B2C8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 956502CE217F5FCF0058B2C8 /* AppDelegate.swift */; };
-		956502D1217F5FCF0058B2C8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 956502D0217F5FCF0058B2C8 /* ViewController.swift */; };
+		956502D1217F5FCF0058B2C8 /* AlgorithmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 956502D0217F5FCF0058B2C8 /* AlgorithmViewController.swift */; };
 		956502D4217F5FCF0058B2C8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 956502D2217F5FCF0058B2C8 /* Main.storyboard */; };
 		956502D6217F5FD00058B2C8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 956502D5217F5FD00058B2C8 /* Assets.xcassets */; };
 		956502D9217F5FD00058B2C8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 956502D7217F5FD00058B2C8 /* LaunchScreen.storyboard */; };
+		956502E4217F67590058B2C8 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 956502E3217F67590058B2C8 /* Default-568h@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		956502CB217F5FCF0058B2C8 /* Bryson-Algorithm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bryson-Algorithm.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		956502CE217F5FCF0058B2C8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		956502D0217F5FCF0058B2C8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		956502D0217F5FCF0058B2C8 /* AlgorithmViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlgorithmViewController.swift; sourceTree = "<group>"; };
 		956502D3217F5FCF0058B2C8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		956502D5217F5FD00058B2C8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		956502D8217F5FD00058B2C8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		956502DA217F5FD00058B2C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		956502E3217F67590058B2C8 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +40,7 @@
 		956502C2217F5FCF0058B2C8 = {
 			isa = PBXGroup;
 			children = (
+				956502E3217F67590058B2C8 /* Default-568h@2x.png */,
 				956502CD217F5FCF0058B2C8 /* Bryson-Algorithm */,
 				956502CC217F5FCF0058B2C8 /* Products */,
 			);
@@ -83,7 +86,7 @@
 		956502E2217F5FE60058B2C8 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				956502D0217F5FCF0058B2C8 /* ViewController.swift */,
+				956502D0217F5FCF0058B2C8 /* AlgorithmViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -147,6 +150,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				956502D9217F5FD00058B2C8 /* LaunchScreen.storyboard in Resources */,
+				956502E4217F67590058B2C8 /* Default-568h@2x.png in Resources */,
 				956502D6217F5FD00058B2C8 /* Assets.xcassets in Resources */,
 				956502D4217F5FCF0058B2C8 /* Main.storyboard in Resources */,
 			);
@@ -159,7 +163,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				956502D1217F5FCF0058B2C8 /* ViewController.swift in Sources */,
+				956502D1217F5FCF0058B2C8 /* AlgorithmViewController.swift in Sources */,
 				956502CF217F5FCF0058B2C8 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -305,7 +309,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "Bryson-Algorithm/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Bryson-Algorithm/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -322,7 +326,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "Bryson-Algorithm/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Bryson-Algorithm/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
