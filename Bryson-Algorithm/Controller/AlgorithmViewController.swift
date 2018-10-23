@@ -23,11 +23,38 @@ public class AlgorithmViewController: UIViewController
     
     private func formatAlgorithm() -> Void
     {
-        let stepOne : String = ""
-        let stepTwo : String = ""
-        let stepThree : String = ""
-    
+        let title : String = "How to make a project in Xcode."
+        
+        let stepOne : String = "Open XCode"
+        let stepTwo : String = "Click on New Project"
+        let stepThree : String = "Select the platform you want your app on"
+        let stepFour : String = "Organize the folders as needed to better help you understand where things are while staying neat and clear."
+        let stepFive : String = "Go to the “main storyboard” to change the UI of the app and use the right click on the mouse to drag and drop nodes together to connect certain elements to code."
+        let stepSix : String = "Open the “view controller:” to start coding your app."
+        
+
+        let algoritm = [stepOne, stepTwo, stepThree, stepFour, stepFive, stepSix]
+        
+        let bullet : String = "🐐"
+        let formattedStep : String = "\n\(bullet) \(step)"
+        let attributedStringStep : NSMutableAttributedString = NSMUtableAttributedString(string: formattedStep)
+        
+        fullAttributedString.append(attributedStringStep)
+        
+        
     }
     
-}
+    
+    private func createOutlineStyle() -> NSParagraphStyle
+    {
+        let outlineStyle : NSMutableparagraphStyle = NSMutableParagraphStyle()
+        
+        outlineStyle.alignment = .left
+        outlineStyle.defautTabInterval = 15
+        outlineStyle.firstLineHeadIndent = 20
+        outlineStyle.headIndent = 35
+        
+        return outlineStyle
+    
+    }
 
