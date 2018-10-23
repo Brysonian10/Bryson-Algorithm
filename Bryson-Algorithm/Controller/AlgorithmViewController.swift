@@ -18,6 +18,7 @@ public class AlgorithmViewController: UIViewController
     public override func viewDidLoad() -> Void
     {
         super.viewDidLoad()
+        
         formatAlgorithm()
     }
     
@@ -33,21 +34,33 @@ public class AlgorithmViewController: UIViewController
         let stepSix : String = "Open the “view controller:” to start coding your app."
         
 
-        let algoritm = [stepOne, stepTwo, stepThree, stepFour, stepFive, stepSix]
+        let algorithm = [stepOne, stepTwo, stepThree, stepFour, stepFive, stepSix]
+        
+        let attributesDictionary = [NSAttributedStringKey.font : algorithmText.font]
+        let fullAttributedString = NSMutableAttributedString(string: title, attributes: attributesDictionary)
+        
+        for step in algorithm
+        {
         
         let bullet : String = "🐐"
         let formattedStep : String = "\n\(bullet) \(step)"
-        let attributedStringStep : NSMutableAttributedString = NSMUtableAttributedString(string: formattedStep)
+        let attributedStringStep : NSMutableAttributedString = NSMutableAttributedString(string: formattedStep)
+        let outlineStyle = createOutlineStyle()
+            
+            attributedStringStep.addAttributes([NSAttributedStringKey.paragraphStyle : outlineStyle], range: NSMakeRange(0,attributedStringStep.length))
         
         fullAttributedString.append(attributedStringStep)
+            
+        }
         
+        algorithmText.attributedText = fullAttributedString
         
     }
     
     
     private func createOutlineStyle() -> NSParagraphStyle
     {
-        let outlineStyle : NSMutableparagraphStyle = NSMutableParagraphStyle()
+        let outlineStyle : NSMutableParagraphStyle = NSMutableParagraphStyle()
         
         outlineStyle.alignment = .left
         outlineStyle.defautTabInterval = 15
@@ -55,6 +68,7 @@ public class AlgorithmViewController: UIViewController
         outlineStyle.headIndent = 35
         
         return outlineStyle
-    
     }
+    
+}
 
