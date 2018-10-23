@@ -63,7 +63,7 @@ public class AlgorithmViewController: UIViewController
         let outlineStyle : NSMutableParagraphStyle = NSMutableParagraphStyle()
         
         outlineStyle.alignment = .left
-        outlineStyle.defautTabInterval = 15
+        outlineStyle.defaultTabInterval = 15
         outlineStyle.firstLineHeadIndent = 20
         outlineStyle.headIndent = 35
         
